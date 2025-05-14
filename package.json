@@ -1,9 +1,12 @@
 {
+  "homepage": "https://coderjan123.github.io/100-checkboxes/ ",
   "name": "100-checkboxes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
