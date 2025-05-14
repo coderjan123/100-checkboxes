@@ -1,7 +1,7 @@
 .Checkbox{
   align-items: center;
   justify-content: center;
-  height: 19px;
+  height: 79px;
   aspect-ratio: 1 / 1;
   border: 1px solid #1c2642;
   display:block;
@@ -25,11 +25,11 @@
   transition: filter 0.3s ease;
 }
 .Checkbox-holder{
-  margin:4px;
+  margin:16px;
   display: grid;
-   grid-template-columns: repeat(auto-fill, 20px);
+   grid-template-columns: repeat(auto-fill, 80px);
     grid-template-rows: auto;
-   grid-gap: 2px 2px;
+   grid-gap: 8px 8px;
 }
 .Checkmark:hover{
   filter: brightness(1.1);
@@ -41,13 +41,13 @@ body {
   padding: 0px;
 }
 .Input {
-  width: 127px;
-  margin: 4px;
+  width: 510px;
+  margin: 16px;
   color: #FFFFFF; /* Text color */
   background: linear-gradient(145deg, #730ae4, #4525fc, #2575fc); /* Soft gradient from purple to blue */
   border: none;
   border-radius: 0px; /* Rounded corners */
-  font-size: 16px;
+  font-size: 64px;
   font-family: 'Arial', sans-serif;
   transition: background 2.8s ease, border-radius 2.8s ease; /* Specify which properties to transition */
 }
