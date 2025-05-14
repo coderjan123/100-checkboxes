@@ -1,17 +1,21 @@
 .Checkbox{
   align-items: center;
   justify-content: center;
-  height: 20px;
+  height: 19px;
   aspect-ratio: 1 / 1;
-  border: 1px solid #1C2541;
+  border: 1px solid #1c2642;
   display:block;
   background-color: #2B3964;
+    transition: background-color 3.2s ease-out;
+
 
   
 }
 .Checkbox:hover{
 
   background-color: #6FFFE9;
+  transition-duration: 0.2s;
+  
 
   
 }
@@ -21,10 +25,11 @@
   transition: filter 0.3s ease;
 }
 .Checkbox-holder{
+  margin:4px;
   display: grid;
    grid-template-columns: repeat(auto-fill, 20px);
     grid-template-rows: auto;
-   grid-gap: 8px 8px;
+   grid-gap: 2px 2px;
 }
 .Checkmark:hover{
   filter: brightness(1.1);
@@ -32,14 +37,24 @@
 }
 body {
   background-color: #0B132B; /* Choose any color */
+  margin: 0px;
+  padding: 0px;
+}
+.Input {
+  width: 127px;
+  margin: 4px;
+  color: #FFFFFF; /* Text color */
+  background: linear-gradient(145deg, #730ae4, #4525fc, #2575fc); /* Soft gradient from purple to blue */
+  border: none;
+  border-radius: 0px; /* Rounded corners */
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  transition: background 2.8s ease, border-radius 2.8s ease; /* Specify which properties to transition */
+}
 
+.Input:focus {
+  outline: none; /* Removes the blue outline */
+  background: linear-gradient(145deg, #780bec, #2545fc, #2582fc); /* Soft gradient from purple to blue */
+  border: none;
 }
-.Input{
-  color: #5BC0BE;
-  background-color: #1C2541;
-  border: 0px;
-}
-Input:focus {
-  outline: none; /* removes the blue border */
-  border: 0px; /* adds a custom border instead */
-}
+
